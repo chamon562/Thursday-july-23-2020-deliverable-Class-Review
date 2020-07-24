@@ -12,6 +12,7 @@ fetch('https://secure-hamlet-19722.herokuapp.com/api/v1/characters')
     console.log(response)
     return response.json()
 })
+
 //.the(data) to grab data 
 .then(data =>{
     console.log(data)
@@ -57,13 +58,10 @@ fetch('https://secure-hamlet-19722.herokuapp.com/api/v1/characters')
     body.appendChild(card)
     card.appendChild(cardUniverse)
 
-    
-    
+  })
 
-
-})
-// Constructor Forms 
-function BESTBoxer(name, titles, age){
+  // Constructor Forms 
+  function BESTBoxer(name, titles, age){
   this.name = name 
   this.titles = titles 
   this.age = age
@@ -79,3 +77,29 @@ let muhammidAli = new BESTBoxer('Cassius Marcellus Clay Jr aka Muhammid Ali', 'O
 console.log(mikeTyson)
 console.log(mannyPaciao)
 console.log(muhammidAli)
+
+
+//class
+
+// class Nintendo {
+  // console.log('is this working' +Nintendo)
+  //here is where setup your constructor what you pass in to your class
+  //like a function
+  //constrcutor part info we put in
+  // constructor(year, name, genre){
+  //     this.year = year
+  //     this.name = name
+  //     this.genre = genre
+  
+  
+  // }
+  // intro()
+// }
+
+  
+
+
+let nesGame = new Nintendo('1987', 'Mega Man', 'Action Side Scroller')
+// console.log(nesGame)
+nesGame.drive()
+nesGame.intro()
