@@ -62,3 +62,20 @@ fetch('https://secure-hamlet-19722.herokuapp.com/api/v1/characters')
 
 
 })
+// Constructor Forms 
+function BESTBoxer(name, titles, age){
+  this.name = name 
+  this.titles = titles 
+  this.age = age
+  this.intro = function(){
+    console.log('The Greatest boxer of all time is ' + this.name)
+
+  }
+}
+
+let mikeTyson = new BESTBoxer('Iron Mike Tison', 'former WBC, WBA and IBF world heavyweight champion ',  ' 54' )
+let mannyPaciao = new BESTBoxer('Manny PacMan Pacquiao', 'only boxer in history to win 12 major world titles in eight different weight divisions', '40')
+let muhammidAli = new BESTBoxer('Cassius Marcellus Clay Jr aka Muhammid Ali', 'Olympic gold medalist and the first fighter to capture the heavyweight title three times', '74')
+console.log(mikeTyson)
+console.log(mannyPaciao)
+console.log(muhammidAli)
