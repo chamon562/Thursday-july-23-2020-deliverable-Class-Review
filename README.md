@@ -113,3 +113,49 @@ nesGame.intro()
 
 1. Class from what Ive been putting in is alot similar to the cunstructor function. only difference is instead of using function in the beginning it says class. Inside of the class is also an array objects with key value pairs. Made a variable outside and equal new and class name fulfilling the three perameters.
 
+
+## Promises
+
+```javascript
+
+et isDadHappy = true;
+
+let willIGetNewCat = new Promise(
+    function (resolve, reject) {
+        if (isCatHappy) {
+            let Cat = {
+                breed: 'calico',
+                color: 'multi colored'
+            };
+            resolve(Cat); // fulfilled
+            
+        } else {
+            // let reason = new Error('Cat is not happy');
+            reject('Daddy ant happy'); // reject
+        }
+
+    }
+);
+
+
+```
+1. Promises is similar to If statements and we careted our own error to alert other egineers whos looking at our code. the promise has a resolve if the boolean is true if not its rejected with a message saying "Daddy ant happy"
+
+
+## async/awaits
+
+```javascript
+
+sync function printInsta(){
+    let endpoint = 'https://www.facebook.com/splatterhouse'
+    let CendPoint = 'https://www.facebook.com/chamon562'
+    let splatterHouse = await fetch(endpoint).then(response =>response.json())
+    console.log(splatterHouse)
+    let channee = fetch(CendPoint).then(response => response.json())
+    console.log(channee)
+}
+printInsta()
+
+```
+
+1. From what I can remember with async awaits is that if I have two functions, they will will be ran at the same time and if I want them to run one after another in sequence I would have to use async awaits. async goes first and shoots off that function then awaits shoots of the other.

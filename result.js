@@ -14,29 +14,43 @@ resultDiv.appendChild(resultElement)
 
 })
 
+//Promis
 
-//class
+let isCatHappy = true;
 
-class Nintendo {
-    //here is where setup your constructor what you pass in to your class
-    //like a function
-    //constrcutor part info we put in
-    constructor(year, name, genre ){
-        this.year = year
-        this.name = name
-        this.genre = genre
-    
-    
+let willIGetNewCat = new Promise(
+    function (resolve, reject) {
+        if (isCatHappy) {
+            let Cat = {
+                breed: 'calico',
+                color: 'multi colored'
+            };
+            resolve(Cat); // fulfilled
+            //if false we purposely created error and this goes through
+        } else {
+            // let reason = new Error('Cat is not happy');
+            reject('Cat ant happy'); // reject
+        }
+
     }
-    intro()
-   
+);
+
+
+
+
+
+// async/awaits
+
+async function printInsta(){
+    let endpoint = 'https://www.facebook.com/splatterhouse'
+    let CendPoint = 'https://www.facebook.com/chamon562'
+    let splatterHouse = await fetch(endpoint).then(response =>response.json())
+    console.log(splatterHouse)
+    let channee = fetch(CendPoint).then(response => response.json())
+    console.log(channee)
 }
-    
+printInsta()
 
 
-let nesGame = new Nintendo('1987', 'Mega Man', 'Action Side Scroller')
-// console.log(nesGame)
-nesGame.drive()
-nesGame.intro()
 
 
