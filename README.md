@@ -81,3 +81,35 @@ console.log(muhammidAli)
 ```
 
 1. Constructor Functions similar to functions is some type of action did something and return some type of value.function template with info in it and we gon put info it. The constructor function name is also in all capitalized and changes to a different color, can take multiple peramiters and inside use array of objects with key value pairs. shows what the different things you can take from it in the console.
+
+
+## Class
+
+```javascript
+
+class Nintendo {
+  //here is where setup your constructor what you pass in to your class
+  //like a function
+  //constrcutor part info we put in
+  constructor(year, name, genre ){
+      this.year = year
+      this.name = name
+      this.genre = genre
+  
+  
+  }
+  intro()
+ 
+}
+  
+
+
+let nesGame = new Nintendo('1987', 'Mega Man', 'Action Side Scroller')
+// console.log(nesGame)
+nesGame.drive()
+nesGame.intro()
+
+```
+
+1. Class from what Ive been putting in is alot similar to the cunstructor function. only difference is instead of using function in the beginning it says class. Inside of the class is also an array objects with key value pairs. Made a variable outside and equal new and class name fulfilling the three perameters.
+
